@@ -12,7 +12,7 @@ function SingleItem(props) {
                 <p>{props.props.description}</p>
             </div>
             <div className="product-quantity">
-                <p>{props.props.amount}</p>
+                <input>{props.amount}</input>
             </div>
             <div className="product-price">
                 <p>{props.props.price}</p>

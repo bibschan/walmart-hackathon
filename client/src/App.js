@@ -1,21 +1,24 @@
 import './styles/app.css';
 import Header from './components/Header';
-import Footer from  './components/Footer/Footer';
 import Categories from './components/Categories';
-import Cart from './components/Cart/Cart';
-import {Switch, 
-Route, 
-Link} from 'react-router-dom';
+import Footer from  './components/Footer/Footer';
+import {Switch, Route,  Link} from 'react-router-dom';
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <Cart />
-      <Footer />
-    </div>
-  );
+class App {
+  state = {
+    arrivalBanner: false
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header arrivalBanner={this.state.arrivalBanner}/>
+        <Categories />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -4,7 +4,8 @@ import egg from '../../assets/egg.png';
 import soy from '../../assets/soysauce.png';
 import cucumber from '../../assets/cucumbers.jpeg';
 import tropicana from '../../assets/tropicana.png';
-import SingleItem from '../../components/SingleItem/SingleItem'
+import SingleItem from '../../components/SingleItem/SingleItem';
+import Modal from '../../components/Modal/Modal'
 
 
 
@@ -49,6 +50,12 @@ export default class Cart extends Component {
             isVisible: true
         })
     }
+
+    hideModal = () => {
+        this.setState({
+            isVisible:false
+        })
+    }
      
     // handleCancel = () => {
     //     hideModal();
@@ -67,13 +74,14 @@ export default class Cart extends Component {
                 <SingleItem props = {i} />
             )
         })}
-        <div className = 'button'>
-            <h1>Order Now for Wednesday Arrival</h1>
-                <div>
-                <button>Cancel</button>
-                <button onClick = {this.showModal}>Reorder Now</button>
-                </div>
+            <div className = 'button'>
+                <h1>Order Now for Wednesday Arrival</h1>
+                    <div>
+                    <button onClick = {this.hideModal}>Cancel</button>
+                    <button onClick = {this.showModal}>Reorder Now</button>
+                    </div>
             </div>
+            <Modal isVisible = {this.state.isVisible} />
         </div>
         )
     } 

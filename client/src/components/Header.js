@@ -4,9 +4,9 @@ import './../styles/app.css';
 import searchInput from './../assets/Search.png';
 import banner from './../assets/Banner.png';
 import yourFavoritesHeader from './../assets/Title.png';
+import orderWillArrive from './../assets/order-arrival-date.png';
 
-
-function Header() {
+function Header(props) {
     return (
         <div className="header">
             <div className="header-flex">
@@ -20,6 +20,7 @@ function Header() {
                 <img src={yourFavoritesHeader} alt="" className="favoritesHeader"/>
                 <img src={searchInput} alt="" className="searchInput"/>
             </div>
+            {}
             <img src={banner} alt="" className="banner"/>
         </div>
     )
