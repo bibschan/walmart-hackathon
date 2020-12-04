@@ -42,7 +42,7 @@ export default class Cart extends Component {
                 price: '$4.99'
             }
         ],
-        isVisible = false, 
+        isVisible: false, 
     }
 
     showModal = () => {
@@ -81,7 +81,7 @@ export default class Cart extends Component {
                     <button onClick = {this.showModal}>Reorder Now</button>
                     </div>
             </div>
-            <Modal isVisible = {this.state.isVisible} />
+            <Modal isVisible = {this.state.isVisible} hideModal = {this.hideModal} number = {'908028'}/>
         </div>
         )
     } 

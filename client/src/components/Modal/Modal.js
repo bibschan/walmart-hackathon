@@ -3,7 +3,7 @@ import React from 'react'
 
 
 //modal need to receive a props to check if it should show or not and also receive a function to toggle the state
-export default function Modal({isVisible, email, date, price, distance}) {
+export default function Modal({isVisible, email, date, price, distance, hideModal, number}) {
      
     const handleCancel = () => {
         hideModal();
@@ -21,9 +21,9 @@ export default function Modal({isVisible, email, date, price, distance}) {
                 <div className="modal__contents">
                     <div>
                     <div className="cancel">
-                        <Cancel onClick={handleCancel}/>
+                        <button onClick={handleCancel}/>
                     </div>
-                        <h1>Order {toDelete}</h1>
+                        <h1>Order # {number}</h1>
                         <p>We've sent your receipt to your email: <br/> {email}</p>
                     </div>
                     <div>

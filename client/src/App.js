@@ -16,7 +16,7 @@ class App extends React.Component{
     return (
       <div className="App">
         <Header arrivalBanner={this.state.arrivalBanner}/>
-        <Categories />
+        <Cart />
         <Footer />
       </div>
     );
