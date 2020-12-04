@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  margin-top: 30px;
 }
 
 .header-flex {
@@ -27,7 +28,69 @@
   width: fit-content;
 }
 
+.username {
+  margin-right: 128px;
+}
+
+.favoritesHeader {
+  width: 245px;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+
+.searchInput {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  width: 374px;
+  margin-left: 22px;
+}
+
+.categories--header {
+  width: 100%;
+}
+
+.categories--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.banner {
+  margin-top: 10px;
+}
+
+.category {
+  width: 43%;
+  margin-top: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  width: 100vw;
   height: 100vh;
 }
 /*# sourceMappingURL=app.css.map */

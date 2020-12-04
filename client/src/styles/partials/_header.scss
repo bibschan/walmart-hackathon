@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  margin-top: 30px;
 
   &-flex {
     display: flex;
@@ -16,4 +17,8 @@
 
 .icons {
   width: fit-content;
+}
+
+.username {
+  margin-right: 128px;
 }

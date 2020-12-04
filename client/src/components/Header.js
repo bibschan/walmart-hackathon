@@ -1,18 +1,26 @@
 import menuIcon from './../assets/Menu.png';
 import notificationIcon from './../assets/Bell.png';
 import './../styles/app.css';
+import searchInput from './../assets/Search.png';
+import banner from './../assets/Banner.png';
+import yourFavoritesHeader from './../assets/Title.png';
 
 
 function Header() {
     return (
         <div className="header">
             <div className="header-flex">
-                <h1>Hi Tammy!</h1>
+                <h2 className="username">Hi Tammy!</h2>
                 <div className="icons">
                     <img src={notificationIcon} alt="" className="icon"/>
                     <img src={menuIcon}  alt="" className="icon"/>
                 </div>
             </div>
+            <div categories--header>
+                <img src={yourFavoritesHeader} alt="" className="favoritesHeader"/>
+                <img src={searchInput} alt="" className="searchInput"/>
+            </div>
+            <img src={banner} alt="" className="banner"/>
         </div>
     )
 }
