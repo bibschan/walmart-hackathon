@@ -1,4 +1,5 @@
 @import "./partials/header";
+@import "./partials/singleItem";
 @import "./partials/categories";
 
 * {
@@ -6,9 +7,9 @@
   margin: 0;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .App {

@@ -32,6 +32,26 @@
   margin-right: 128px;
 }
 
+.single-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.product-image {
+  width: 20%;
+}
+
+input {
+  width: 20px;
+}
+
 .favoritesHeader {
   width: 245px;
   margin-left: 21px;
