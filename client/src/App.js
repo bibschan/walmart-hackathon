@@ -1,6 +1,6 @@
 import './styles/app.css';
-import Categories from './components/Categories';
 import Header from './components/Header';
+import Categories from './components/Categories';
 import Footer from  './components/Footer/Footer';
 import {Switch, Route,  Link} from 'react-router-dom';
 
