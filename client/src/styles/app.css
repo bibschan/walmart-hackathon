@@ -66,6 +66,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .banner {
@@ -83,7 +84,13 @@
   margin: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  width: 100vw;
   height: 100vh;
 }
 /*# sourceMappingURL=app.css.map */
