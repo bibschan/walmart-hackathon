@@ -1,4 +1,5 @@
 import './styles/app.css';
+import Modal from './components/Modal/Modal'
 
 function App() {
   return (
