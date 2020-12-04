@@ -1,0 +1,36 @@
+.favoritesHeader {
+  width: 245px;
+  margin-left: 21px;
+  margin-top: 20px;
+}
+
+.searchInput {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  width: 374px;
+  margin-left: 22px;
+}
+
+.categories {
+  &--header {
+    width: 100%;
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
+
+.banner {
+  margin-top: 10px;
+}
+
+.category {
+  width: 43%;
+  margin-top: 20px;
+}

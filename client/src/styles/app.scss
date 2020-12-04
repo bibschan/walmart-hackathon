@@ -1,4 +1,10 @@
 @import "./partials/header";
+@import "./partials/categories";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
 .App {
   height: 100vh;
