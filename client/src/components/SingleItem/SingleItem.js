@@ -1,20 +1,21 @@
 import './../../styles/app.css';
 
 function SingleItem(props) {
+    console.log(props)
     return (
         <div className="single-item">
             <div className="product-image">
-                <img src={props.image} alt=""/>
+                <img src={props.props.image} alt=""/>
             </div>
             <div className="product-description">
-                <h2>{props.name}</h2>
-                <p>{props.description}</p>
+                <h2>{props.props.name}</h2>
+                <p>{props.props.description}</p>
             </div>
             <div className="product-quantity">
-                <p>{props.amount}</p>
+                <p>{props.props.amount}</p>
             </div>
             <div className="product-price">
-                <p>{props.price}</p>
+                <p>{props.props.price}</p>
             </div>
             <div className="product-action-icons">
                 <img alt=""/>
