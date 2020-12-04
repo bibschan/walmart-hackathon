@@ -1,10 +1,12 @@
-import './styles/app.css';
-import Modal from './components/Modal/Modal'
+import './styles/app.scss';
+import Header from './components/Header';
+import Footer from  './components/Footer/Footer'
 
 function App() {
   return (
     <div className="App">
-      {/* routes would go here :)  */}
+      <Header />
+      <Footer />
     </div>
   );
 }
