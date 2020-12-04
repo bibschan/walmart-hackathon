@@ -81,7 +81,7 @@ export default class Cart extends Component {
                     <button onClick = {this.showModal}>Reorder Now</button>
                     </div>
             </div>
-            <Modal isVisible = {this.state.isVisible} hideModal = {this.hideModal} number = {'908028'}/>
+            <Modal isVisible = {this.state.isVisible} hideModal = {this.hideModal} number = {'908028'} date = {'Wednesday, December 9th'} price = {"4.50"} email = {'tammy1@gmail.com'} distance ={'20km'}/>
         </div>
         )
     } 
