@@ -5,14 +5,14 @@ function SingleItem(props) {
     return (
         <div className="single-item">
             <div className="product-image">
-                <img src={props.props.image} alt=""/>
+                <img src={props.props.image} alt="" className="image"/>
             </div>
             <div className="product-description">
-                <h2>{props.props.name}</h2>
+                <p className="name">{props.props.name}</p>
                 <p>{props.props.description}</p>
             </div>
             <div className="product-quantity">
-                <input>{props.amount}</input>
+                <input value={props.amount}></input>
             </div>
             <div className="product-price">
                 <p>{props.props.price}</p>
