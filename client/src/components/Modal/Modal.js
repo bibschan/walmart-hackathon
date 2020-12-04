@@ -1,5 +1,6 @@
 import './Modal.scss';
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 
 //modal need to receive a props to check if it should show or not and also receive a function to toggle the state
@@ -10,8 +11,7 @@ export default function Modal({isVisible, email, date, price, distance, hideModa
     }
 
     const handleNeighbour = (event) =>{
-        event.preventDefault();
-        hideModal();
+        window.location.href = '/'
     }
     if(!isVisible) {
         return null;
@@ -34,7 +34,7 @@ export default function Modal({isVisible, email, date, price, distance, hideModa
                     </div>
                     <div className="modal-btn-tray">
                         <button className="btn btn-white btn-modal" onClick={handleCancel}>Cancel</button>
-                        <button className="btn btn-red btn-modal" onClick={handleNeighbour}>Get a Neighbour on Board</button>
+                        <button className="btn btn-red btn-modal" onClick={handleNeighbour} exact to = '/'>Get a Neighbour on Board</button>
                     </div>
                 </div>
             </div>

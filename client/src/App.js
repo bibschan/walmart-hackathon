@@ -4,7 +4,8 @@ import Header from './components/Header';
 import Categories from './components/Categories';
 import Footer from  './components/Footer/Footer';
 import Cart from "./components/Cart/Cart";
-import {Switch, Route,  Link} from 'react-router-dom';
+import {Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 
 class App extends React.Component{
@@ -14,11 +15,15 @@ class App extends React.Component{
 
   render() {
     return (
-      <div className="App">
-        <Header arrivalBanner={this.state.arrivalBanner}/>
-        <Cart />
-        <Footer />
-      </div>
+      <Router>
+      <Header arrivalBanner={this.state.arrivalBanner}/>
+        <Switch>
+        <Route path = '/' exact component = {Categories} />
+        <Route path = '/cart' exact component ={Cart} />
+        </Switch>
+      <Footer />
+      </Router>
+        
     );
   }
 }

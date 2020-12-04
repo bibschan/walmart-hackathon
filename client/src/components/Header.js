@@ -7,6 +7,9 @@ import yourFavoritesHeader from './../assets/Title.png';
 import orderWillArrive from './../assets/order-arrival-date.png';
 
 function Header(props) {
+    const redirect = () => {
+        window.location.href = '/cart'
+    }
     return (
         <div className="header">
             <div className="header-flex">
@@ -21,7 +24,7 @@ function Header(props) {
                 <img src={searchInput} alt="" className="searchInput"/>
             </div>
             {}
-            <img src={banner} alt="" className="banner"/>
+            <img src={banner} onClick = {redirect}alt="" className="banner"/>
         </div>
     )
 }
