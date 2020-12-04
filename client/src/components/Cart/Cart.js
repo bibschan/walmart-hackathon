@@ -40,7 +40,14 @@ export default class Cart extends Component {
                 amount: '1',
                 price: '$4.99'
             }
-        ]
+        ],
+        isVisible = false, 
+    }
+
+    showModal = () => {
+        this.setState({
+            isVisible: true
+        })
     }
      
     // handleCancel = () => {
@@ -60,6 +67,13 @@ export default class Cart extends Component {
                 <SingleItem props = {i} />
             )
         })}
+        <div className = 'button'>
+            <h1>Order Now for Wednesday Arrival</h1>
+                <div>
+                <button>Cancel</button>
+                <button onClick = {this.showModal}>Reorder Now</button>
+                </div>
+            </div>
         </div>
         )
     } 
