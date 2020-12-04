@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+
+  &-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.icon {
+  height: 47px;
+  //   width: 47px;
+}
+
+.icons {
+  width: fit-content;
+}
