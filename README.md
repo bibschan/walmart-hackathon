@@ -1,7 +1,7 @@
 # Brainstation x Walmart hackathon
 BrainStation hosted a hackathon partnered with Walmart Global Tech with the intent to find solutions ti how we could deliver value to Walmart customers during these challenging times, helping them to save money and live better.
 
-## Our Solution
+### Our Solution
 Our idea facilitates Walmart customers to split the delivery cost of their online groceries with their close neighbours and therefore, a single delivery trip will fulfil two or more orders. Simple, customer-focused and environment-friendly. 
 
 
