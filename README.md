@@ -7,7 +7,8 @@ Our idea facilitates Walmart customers to split the delivery cost of their onlin
 
 
 ## Demo
-<img src="hackathon.gif" width="400" height="750"/>
+<img src="hackathon.gif" width="400" height="750"/>  
+
 <!-- ![](https://github.com/bibschan/walmart-hackathon/blob/master/hackathon.gif) -->
 
 <!-- EMBEDDED CODE <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embedembed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlwOfrGVXCjMQDdJNmllnk8%2F4BSD%3Fnode-id%3D140%253A602%26scaling%3Dscaledown" allowfullscreen></iframe> -->
